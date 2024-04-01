@@ -1,0 +1,16 @@
+----------------------------Channel Layers----------------------------
+* Channels — Channels are a first-in, first out queue with at-most-once delivery semantics. Each channel
+has a name. Messages are sent to channel by anyone who knows the channel name and the given to
+consumer listening on that channel.
+
+* Groups — Sending to individual channels isn’t particularly useful - in most cases you'll want to send to
+multiple channels/consumers at once as a broadcast and there we use groups.
+Multiple channels can be grouped into a group. Each group has a name. A channel can be added or
+removed from a group by anyone who knows the group name. Using the group name you can also send
+a message to all channels in the group.
+Groups are a broadcast system that:
++ Allows you to add and remove channel names from named groups, and send to those named groups.
++ Provides group expiry for clean-up of connections whose disconnect handler didn’t get to run (e.g. power failure)
+
+* Messages — Messages must be a dict. Because these messages are sometimes sent over a network, they
+need to be serializable.
