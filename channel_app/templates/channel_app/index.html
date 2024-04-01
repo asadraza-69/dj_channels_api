@@ -6,16 +6,19 @@
 </head>
 <body>
 <h1>Welcome page</h1>
+<h4 id="ct"></h4>
 </body>
 
 <script>
-    const ws = new WebSocket('ws://127.0.0.1:8080/ws/sc/');
+    const ws = new WebSocket('ws://127.0.0.1:8080/ws/ac/');
     ws.onopen = function () {
     console.log('Websocket connection open...')
         ws.send("Hi there!");
     }
     ws.onmessage = function (event) {
         console.log('Message Received from Server...', event)
+        document.getElementById('ct').innerText = event.data
+
     }
     ws.onerror = function (event) {
         console.log('Message Error Occurred from Server ...', event)
