@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome page</h1>
+</body>
+
+<script>
+    const ws = new WebSocket('ws://127.0.0.1:8080/ws/sc/');
+    ws.onopen = function () {
+    console.log('Websocket connection open...')
+        ws.send("Hi there!");
+    }
+    ws.onmessage = function (event) {
+        console.log('Message Received from Server...', event)
+    }
+    ws.onerror = function (event) {
+        console.log('Message Error Occurred from Server ...', event)
+    }
+    ws.close = function (event) {
+        console.log('Message On connection close ...', event)
+    }
+
+    // ws.addEventListener('open', (event) => {
+    //     console.log('Websocket connection open...', event)
+    //     ws.send('Hi, Message from Client...')
+    // })
+    // ws.addEventListener('message', (event) => {
+    //     console.log('Message Received from Server...', event)
+    // })
+    // ws.addEventListener('error', (event) => {
+    //     console.log('Websocket Error Occurred...', event)
+    // })
+    //
+    // ws.addEventListener('close', (event) => {
+    //     console.log('Websocket Connection Closed...', event)
+    // })
+</script>
+</html>
