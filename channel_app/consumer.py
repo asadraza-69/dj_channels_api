@@ -1,35 +1,38 @@
-from channels.consumer import SyncConsumer,AsyncConsumer
+from channels.consumer import SyncConsumer, AsyncConsumer
 
-class MySyncConsumer (SyncConsumer) :
-    # This handler is called when client initially opens a
-    # connection and is about to finish the WebSocket handshake.
+
+class MySyncConsumer(SyncConsumer):
+    # This handler is called when the client initially opens a connection
+    # and is about to finish the WebSocket handshake.
     def websocket_connect(self, event):
         print('Websocket Connected...')
-    # This handler is called when data received from client
+        self.send({
+            'type': 'websocket.accept',
+            'accept': True,
+        })
+
+    # This handler is called when data is received from the client.
     def websocket_receive(self, event):
-        print('Messaged Received...')
-        
-    # This handler is called when either connection to the client is
-    # lost, either from the client closing the connection, the server
-    # closing the connegtion, or loss of the socket
+        print('Messaged Received...',event.get('text'))
+        print('--------------------------------')
+
+    # This handler is called when the connection to the client is lost,
+    # either from the client closing the connection or other reasons.
     def websocket_disconnect(self, event):
         print('Websocket Disconnected...')
 
 
-
-# AsyncConsumer will expect you to write async-capable code.app/consumers.py
 class MyAsyncConsumer(AsyncConsumer):
-    # This handler is called when client initially opens a
-    # connection and is about to finish the WebSocket handshake.
+    # This handler is called when the client initially opens a connection
+    # and is about to finish the WebSocket handshake.
     async def websocket_connect(self, event):
         print('WebSocket Connect...')
-    
-    # This handler is called when data received from client
+
+    # This handler is called when data is received from the client.
     async def websocket_receive(self, event):
         print('Websocket Received...')
-        
-    # This handler is called when either connection to the client is
-    # lost, either from the client closing the connection, the server
-    # closing the connegtion, or loss of the socket
+
+    # This handler is called when the connection to the client is lost,
+    # either from the client closing the connection or other reasons.
     async def websocket_disconnect(self, event):
         print('Websocket Disconnect...')
