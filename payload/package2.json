@@ -1,0 +1,57 @@
+{
+    "subscription_info": {
+        "duration_start_date": "2023-07-05T19:00:00.000Z",
+        "duration_end_date": "2024-07-06T19:00:00.000Z",
+        "billing_start_date": "2023-07-18T19:00:00.000Z",
+        "free_trail_days": 5,
+        "is_send_payment_link": true,
+        "Custom": {
+            "CustomerRef": {
+                "Id": "243",
+                "Name": "1thread",
+                "Email": "thread@gmail.com"
+            },
+            "Subscription": {
+                "TotalAmt": "1",
+                "TxnDate": "2023-03-30T19:00:00.000Z",
+                "Line": [
+                    {
+                        "productDetail": 0,
+                        "quantity": "1",
+                        "totalAmount": "",
+                        "Amount": 1,
+                        "DetailType": "SalesItemLineDetail",
+                        "Description": "test",
+                        "SalesItemLineDetail": {
+                            "ItemRef": {
+                                "value": "80",
+                                "name": "0XC8HT3PDBWYE"
+                            },
+                            "UnitPrice": 1,
+                            "Qty": 1,
+                            "TaxCodeRef": {
+                                "value": "NON"
+                            }
+                        }
+                    }
+                ],
+                "TxnTaxDetail": {
+                    "TxnTaxCodeRef": {},
+                    "TaxLine": [
+                        {
+                            "DetailType": "TaxLineDetail",
+                            "TaxLineDetail": {
+                                "TaxRateRef": {
+                                    "value": "0"
+                                },
+                                "PercentBased": true,
+                                "TaxPercent": 0,
+                                "NetAmountTaxable": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

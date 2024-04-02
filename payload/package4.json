@@ -1,0 +1,115 @@
+{
+    "paymentinfo": {
+        "Amount": 61.8,
+        "TransType": "sale",
+        "Type": "invoice",
+        "ErpType": 1,
+        "CardProfile": true,
+        "ProfileId": "",
+        "action_type": "receivepayment",
+        "surcharge_fee": 1.8,
+        "Cardinfo": {
+            "Cardholder": "Baker, Chris",
+            "CreditCardNumber": "kDR5vXN9-x5UCGf-G23234-m3gUn49BMPvk",
+            "Month": "",
+            "CCV2": "",
+            "CardType": "Visa",
+            "CreateCardProfile": true
+        },
+        "BillingInfo": {
+            "state": "AZ",
+            "country": "",
+            "zipcode": 12358,
+            "address1": "Park lae street",
+            "address2": ""
+        },
+        "Custom": {
+            "TxnID": "2FC94-1797331710",
+            "TimeCreated": "2026-12-15T15:48:30+05:00",
+            "TimeModified": "2026-12-15T15:48:30+05:00",
+            "EditSequence": "1797331710",
+            "TxnNumber": "1819",
+            "CustomerRef": {
+                "ListID": "940000-1071506775",
+                "FullName": "Baker, Chris"
+            },
+            "ARAccountRef": {
+                "ListID": "40000-933270541",
+                "FullName": "Accounts Receivable"
+            },
+            "TemplateRef": {
+                "ListID": "E0000-1071499861",
+                "FullName": "Rock Castle Invoice"
+            },
+            "TxnDate": "2024-02-25",
+            "RefNumber": "1125",
+            "BillAddress": {
+                "Addr1": "Baker, Chris",
+                "Addr2": "415 W. Desert Bloom",
+                "City": "Bayshore",
+                "State": "CA",
+                "PostalCode": "94326"
+            },
+            "BillAddressBlock": {
+                "Addr1": "Baker, Chris",
+                "Addr2": "415 W. Desert Bloom",
+                "Addr3": "Bayshore, CA  94326"
+            },
+            "IsPending": "false",
+            "IsFinanceCharge": "false",
+            "TermsRef": {
+                "ListID": "10000-933272658",
+                "FullName": "Net 30"
+            },
+            "DueDate": "2024-03-26",
+            "ShipDate": "2024-02-25",
+            "Subtotal": "60.00",
+            "ItemSalesTaxRef": {
+                "ListID": "2E0000-933272656",
+                "FullName": "San Tomas"
+            },
+            "SalesTaxPercentage": "7.75",
+            "SalesTaxTotal": "0.00",
+            "AppliedAmount": "0.00",
+            "BalanceRemaining": "60.00",
+            "IsPaid": "false",
+            "IsToBePrinted": "false",
+            "IsToBeEmailed": "false",
+            "CustomerSalesTaxCodeRef": {
+                "ListID": "10000-999022286",
+                "FullName": "Tax"
+            },
+            "InvoiceLineRet": {
+                "TxnLineID": "2FC96-1797331710",
+                "ItemRef": {
+                    "ListID": "3F0000-1071530163",
+                    "FullName": "Labor"
+                },
+                "Rate": "60",
+                "Amount": "60.00",
+                "SalesTaxCodeRef": {
+                    "ListID": "20000-999022286",
+                    "FullName": "Non"
+                }
+            },
+            "BillEmail": {
+                "Address": "ChrisB@samplename.com"
+            }
+        },
+        "StreetAddress1": "Park lae street",
+        "StreetAddress2": "",
+        "City": "Brockport",
+        "State": "AZ",
+        "Zipcode": 12358,
+        "payment_cycles": [
+            {
+                "amount": 30,
+                "date": "2024-02-21"
+            },
+            {
+                "amount": 30,
+                "date": "2024-02-28"
+            }
+        ]
+    }
+}
