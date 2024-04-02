@@ -1,0 +1,146 @@
+{
+    "all_invoices": [
+        {
+            "invoice_data": {
+                "TxnID": "290E6-1702638670",
+                "TimeCreated": "2023-12-15T16:11:10+05:00",
+                "TimeModified": "2023-12-15T16:11:10+05:00",
+                "EditSequence": "1702638670",
+                "TxnNumber": "1933",
+                "CustomerRef": {
+                    "ListID": "800000DE-1702638690",
+                    "FullName": "Kelly"
+                },
+                "ARAccountRef": {
+                    "ListID": "40000-933270541",
+                    "FullName": "Accounts Receivable"
+                },
+                "TemplateRef": {
+                    "ListID": "E0000-1071499861",
+                    "FullName": "Rock Castle Invoice"
+                },
+                "TxnDate": "2023-08-23",
+                "RefNumber": "2266",
+                "BillAddress": {
+                    "Addr1": "Kelly LLC",
+                    "Addr2": "Kelly james"
+                },
+                "BillAddressBlock": {
+                    "Addr1": "Kelly LLC",
+                    "Addr2": "Kelly james"
+                },
+                "IsPending": "false",
+                "IsFinanceCharge": "false",
+                "DueDate": "2023-08-23",
+                "ShipDate": "2023-08-23",
+                "Subtotal": "100.00",
+                "ItemSalesTaxRef": {
+                    "ListID": "2E0000-933272656",
+                    "FullName": "San Tomas"
+                },
+                "SalesTaxPercentage": "7.75",
+                "SalesTaxTotal": "0.00",
+                "AppliedAmount": "0.00",
+                "BalanceRemaining": "100.00",
+                "IsPaid": "false",
+                "IsToBePrinted": "false",
+                "IsToBeEmailed": "false",
+                "CustomerSalesTaxCodeRef": {
+                    "ListID": "10000-999022286",
+                    "FullName": "Tax"
+                },
+                "InvoiceLineRet": {
+                    "TxnLineID": "290E8-1702638670",
+                    "ItemRef": {
+                        "ListID": "80000056-1197778196",
+                        "FullName": "Blueprints"
+                    },
+                    "Desc": "Blueprints",
+                    "Rate": "100",
+                    "Amount": "100.00",
+                    "SalesTaxCodeRef": {
+                        "ListID": "20000-999022286",
+                        "FullName": "Non"
+                    }
+                },
+                "BillEmail": {
+                    "Address": "kellyjames@yopmail.com"
+                },
+                "Status": "Unpaid",
+                "reason": ""
+            },
+            "profile_id": 293
+        },
+        {
+            "invoice_data": {
+                "TxnID": "290E2-1702638653",
+                "TimeCreated": "2023-12-15T16:10:53+05:00",
+                "TimeModified": "2023-12-15T16:10:53+05:00",
+                "EditSequence": "1702638653",
+                "TxnNumber": "1932",
+                "CustomerRef": {
+                    "ListID": "800000DE-1702638690",
+                    "FullName": "Kelly"
+                },
+                "ARAccountRef": {
+                    "ListID": "40000-933270541",
+                    "FullName": "Accounts Receivable"
+                },
+                "TemplateRef": {
+                    "ListID": "E0000-1071499861",
+                    "FullName": "Rock Castle Invoice"
+                },
+                "TxnDate": "2023-08-22",
+                "RefNumber": "2265",
+                "BillAddress": {
+                    "Addr1": "Kelly LLC",
+                    "Addr2": "Kelly james"
+                },
+                "BillAddressBlock": {
+                    "Addr1": "Kelly LLC",
+                    "Addr2": "Kelly james"
+                },
+                "IsPending": "false",
+                "IsFinanceCharge": "false",
+                "DueDate": "2023-08-22",
+                "ShipDate": "2023-08-22",
+                "Subtotal": "90.00",
+                "ItemSalesTaxRef": {
+                    "ListID": "2E0000-933272656",
+                    "FullName": "San Tomas"
+                },
+                "SalesTaxPercentage": "7.75",
+                "SalesTaxTotal": "0.00",
+                "AppliedAmount": "0.00",
+                "BalanceRemaining": "90.00",
+                "IsPaid": "false",
+                "IsToBePrinted": "false",
+                "IsToBeEmailed": "false",
+                "CustomerSalesTaxCodeRef": {
+                    "ListID": "10000-999022286",
+                    "FullName": "Tax"
+                },
+                "InvoiceLineRet": {
+                    "TxnLineID": "290E4-1702638653",
+                    "ItemRef": {
+                        "ListID": "80000056-1197778196",
+                        "FullName": "Blueprints"
+                    },
+                    "Desc": "Blueprints",
+                    "Rate": "90",
+                    "Amount": "90.00",
+                    "SalesTaxCodeRef": {
+                        "ListID": "20000-999022286",
+                        "FullName": "Non"
+                    }
+                },
+                "BillEmail": {
+                    "Address": "kellyjames@yopmail.com"
+                },
+                "Status": "Unpaid",
+                "reason": ""
+            },
+            "profile_id": 293
+        }
+    ]
+}
